@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+header{
+    height: 100vh;
+    width:  100%;
+    background: url(./images/background.png) no-repeat;
+
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto 0 auto;
+}
+
+.menu {
+    display: flex;
+    
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 0 1rem;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #2c3350;
+}
+
+
+.search-box input {
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    color: #2c3350;
+    border: 2px solid #2c3350;
+    background: #f2f2f2;
+    padding: 0 10px 0 40px;
+}
+
+
+.content {
+    color: #2c3350;
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.buttons {
+    margin:  20px 0 0 50px ;
+}
+
+.content .buttons button {
+    outline: none;
+    margin: 0 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px 16px;
+    background-image: linear-gradient(135deg, #2AFADF 10%, #C346C2 100%);
+} 
+
+.content .girl img {
+    position: absolute;
+    height: 80%;
+    bottom: 0;
+    right: 80px;
+
+}
+
+h1{
+    font-size: 100px;
+    margin: 0 10px;
+}
+
+p {
+   font-size: 30px;
+   font-weight: 300;
+   line-height: 1.2;
+   margin: 0 50px;
+}
+span{
+    color: aqua;
+}
+
+
+@media screen and (max-width: 767px) {
+    /* Your styles for smaller screens here */
+    .navbar {
+      flex-direction: column; /* Change layout to vertical */
+    }
+    .menu {
+      display: none; /* Hide menu initially on small screens */
+    }
+    .search-box {
+      /* Adjust search box styles for smaller screens */
+    }
+  }
+
+  @media screen and (orientation: portrait) {
+    /* Your styles for portrait mode here */
+    .content {
+      flex-wrap: wrap; /* Wrap content on smaller screens */
+    }
+    .girl img {
+      width: 100%; /* Adjust image width for smaller screens */
+    }
+  }
